@@ -355,7 +355,7 @@
             border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
             cursor: pointer;
             transition: all 0.1s;
-            animation: float 4s ease-in;
+            animation: float 1s ease-in;
         }
 
         .balloon:hover {
@@ -407,7 +407,7 @@
     <div id="page1" class="page active">
         <div class="card">
             <h1>🎉 Welcome!</h1>
-            <p style="color: #666; margin-bottom: 20px;">Enter your name to begin...</p>
+            <p style="color: #666; margin-bottom: 20px;">Enter your name to begin... (turn your volume up)</p>
             <input type="text" id="nameInput" placeholder="Your name">
             <button onclick="checkName()">Enter</button>
         </div>
@@ -468,7 +468,7 @@
             <div class="birthday-message" id="birthdayName">Happy Birthday, Franco!</div>
             <p style="color: #666; font-size: 1.2em; margin: 20px 0; line-height: 1.6;">
                 🎉 I wish you another year of laughing at stupid jokes and playing Minecraft and stuff! 
-                Trust me you'll achieve many things this year vro! 🎁
+                Trust me you'll achieve many things this year vro 🎉
             </p>
             
             <div class="image-gallery">
@@ -483,8 +483,8 @@
                 
                 <!-- Fortune Wheel -->
                 <div class="fun-item">
-                    <strong>🎲 Birthday Fortune Wheel</strong>
-                    <p>Spin the wheel to reveal your fortune!</p>
+                    <strong>🎲 Birthday Wheel</strong>
+                    <p>Spin the wheel to reveal some random shi!</p>
                     <div style="margin: 20px 0;">
                         <canvas id="wheelCanvas" width="300" height="300" style="max-width: 100%; cursor: pointer;"></canvas>
                     </div>
@@ -677,14 +677,14 @@
         // Fortune Wheel
         let wheelSpinning = false;
         const fortunes = [
-            "🌟 This year will be LEGENDARY!",
-            "💰 Unexpected good fortune coming your way!",
-            "🎯 Your dreams are about to come true!",
-            "🚀 Adventure awaits you!",
-            "💪 You're unstoppable this year!",
-            "🎨 Creativity will flow through you!",
-            "❤️ Love and happiness surround you!",
-            "🏆 Victory is yours!"
+            "6️⃣7️⃣ SIX SEVEN",
+            "💬 Text me the code 'SigmaBoy9517' through WhatsApp",
+            "🎮 Yo we gotta play GarticPhone",
+            "🤨 That's not very sigma...",
+            "💪 U so tuff",
+            "🎮 Game addict ahh (but that's peak bc you're goated at them)",
+            "🎮 What's your favorita game of all time??",
+            "🏆 If you see this and text me 'skibid' you're tuff"
         ];
 
         function drawWheel() {
@@ -866,7 +866,7 @@
             document.getElementById('balloonStartBtn').textContent = 'Game Active!';
             document.getElementById('balloonStartBtn').disabled = true;
 
-            balloonInterval = setInterval(createBalloon, 800);
+            balloonInterval = setInterval(createBalloon, 300);
 
             setTimeout(() => {
                 clearInterval(balloonInterval);
@@ -918,6 +918,7 @@
         });
 
     </script>
+
 
 
 
