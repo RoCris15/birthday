@@ -467,8 +467,8 @@
             <div class="cake">🎂</div>
             <div class="birthday-message" id="birthdayName">Happy Birthday, Franco!</div>
             <p style="color: #666; font-size: 1.2em; margin: 20px 0; line-height: 1.6;">
-                🎉 Wishing you an amazing day filled with joy, laughter, and unforgettable moments! 
-                May this year bring you everything you've been dreaming of! 🎁
+                🎉 I wish you another year of laughing at stupid jokes and playing Minecraft and stuff! 
+                Trust me you'll achieve many things this year vro! 🎁
             </p>
             
             <div class="image-gallery">
@@ -479,7 +479,7 @@
             </div>
 
             <div class="fun-section">
-                <h2 style="color: #DC143C;">🎮 Interactive Games!</h2>
+                <h2 style="color: #DC143C;">🎮 Peak Games</h2>
                 
                 <!-- Fortune Wheel -->
                 <div class="fun-item">
@@ -494,7 +494,7 @@
 
                 <!-- Memory Game -->
                 <div class="fun-item">
-                    <strong>🎮 Memory Match Game</strong>
+                    <strong>🎮 Meme Memory Game</strong>
                     <p>Match the pairs! Score: <span id="memoryScore">0</span></p>
                     <div id="memoryGame" style="display: grid; grid-template-columns: repeat(4, 70px); gap: 10px; justify-content: center; margin: 20px 0;">
                     </div>
@@ -521,9 +521,12 @@
             <button class="close-btn" onclick="closeSecret()">×</button>
             <h2 style="color: #DC143C; margin-bottom: 20px;">💝 Secret Message</h2>
             <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
-                You're not just getting older, you're leveling up! 🎮 Here's to another year of being awesome, 
-                making memories, and conquering everything that comes your way. You're amazing, and I'm so lucky 
-                to know you. Have the best birthday ever! 🎉🎂✨
+                YO BRO HAPPY BIRTHDAY, I can't believe you're already 15 like why are you such an unc. Thanks for always being 
+                such an amazing cousin and always being there for me. Even if I don't show it much you mean a lot to me man. You're actually 
+                truly an amazing person so don't ever let someone take that away from you. Pursue your talents and don't let anyone ever make 
+                you feel like you're less. Youre worth a lo vro and always know that. Im sure youll achieve many things you want this year and I hope you make the most of it. 
+                Being fifteen might be a little harsh, so if you ever need help in anything tell me. Thank you always being here for me, and know I'm here for you too. SO YEA FELICIDADES. 
+                We gotta play Minecraft vro, and I'm sorry for being busy most of the time but I really wanna play. So yea bro que cumplas muchos más.
             </p>
         </div>
     </div>
@@ -534,13 +537,13 @@
         // EDIT THESE QUIZ SETTINGS
         const quiz = {
             question1: {
-                text: "What is Franco's favorite color?",
-                options: ["Red", "Blue", "Green", "Yellow"],
-                correctIndex: 0  // 0 = first option, 1 = second, etc.
+                text: "What is the My Singing Monsters monster that we had to give to each other on December of each year?",
+                options: ["Noggin", "Hoola", "Entbrat", "Ghazt"],
+                correctIndex: 3  // 0 = first option, 1 = second, etc.
             },
             question2: {
-                text: "What year was Franco born?",
-                options: ["2000", "2001", "2002", "2003"],
+                text: "What is usually your role when we play Minecraft?",
+                options: ["Miner", "Builder", "Speedrunner", "Prankster"],
                 correctIndex: 1
             }
         };
@@ -550,14 +553,14 @@
 
         // EDIT THESE: Memory card images (or leave empty to use emojis)
         const memoryCardImages = {
-            useImages: false, // Set to true to use images instead of emojis
+            useImages: true, // Set to true to use images instead of emojis
             images: [
-                "memory1.png", // Replace with your image URLs
-                "memory2.png",
-                "memory3.png",
-                "memory4.png",
-                "memory5.png",
-                "memory6.png"
+                "memory1.jpg", // Replace with your image URLs
+                "memory2.jpg",
+                "memory3.jpg",
+                "memory4.jpg",
+                "memory5.jpg",
+                "memory6.jpg"
             ]
         };
 
@@ -913,4 +916,5 @@
         document.querySelectorAll('#page4 .quiz-option').forEach((el, i) => {
             el.textContent = quiz.question2.options[i];
         });
+
     </script>
