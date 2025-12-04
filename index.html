@@ -532,6 +532,14 @@
     </div>
 
     <script>
+        const rocketSound = "rocket.mp3";
+        const sixsevenSound = "67.mp3";
+        const amogusSound = "amogus.mp3";
+        const creeperSound = "creeper.mp3";
+        const kirkSound = "kirk.mp3";
+        const yaySound = "yay.mp3";
+        const errorSound = "error.mp3";
+        
         let userName = '';
         
         // EDIT THESE QUIZ SETTINGS
@@ -591,6 +599,11 @@
                 document.getElementById('loadingBar').style.width = progress + '%';
                 document.getElementById('loadingText').textContent = messages[msgIndex];
                 msgIndex++;
+
+                if (progress >= 80) {
+                    const audio1 = new Audio(amogusSound);
+                    audio1.play();
+                }
                 
                 if (progress >= 100) {
                     clearInterval(interval);
@@ -629,6 +642,8 @@
             if (buttonSound) {
                 const audio = new Audio(buttonSound);
                 audio.play();
+                const audio2 = new Audio(creeperSound);
+                audio2.play();
             } else {
                 // Default beep
                 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -667,10 +682,14 @@
         }
 
         function showSecret() {
+            const audio6 = new Audio(yaySound);
+            audio6.play();
             document.getElementById('secretModal').classList.add('active');
         }
 
         function closeSecret() {
+            const audio7 = new Audio(kirkSound);
+            audio7.play();
             document.getElementById('secretModal').classList.remove('active');
         }
 
@@ -761,6 +780,8 @@
             }
 
             animate();
+            const audio3 = new Audio(errorSound);
+            audio3.play();
         }
 
         // Memory Game
@@ -832,7 +853,10 @@
                 document.getElementById('memoryScore').textContent = memoryScore;
 
                 if (matchedPairs === 6) {
+                    const audio4 = new Audio(rocketSound);
+                    audio4.play();
                     setTimeout(() => alert('🎉 You won! Great memory!'), 300);
+                    
                 }
             } else {
                 card1.classList.remove('flipped');
@@ -873,6 +897,8 @@
                 balloonGameActive = false;
                 document.getElementById('balloonStartBtn').textContent = 'Start Game';
                 document.getElementById('balloonStartBtn').disabled = false;
+                const audio5 = new Audio(sixsevenSound);
+                audio5.play();
                 setTimeout(() => {
                     alert(`🎯 Game Over! You popped ${balloonScore} balloons!`);
                 }, 1000);
@@ -918,6 +944,7 @@
         });
 
     </script>
+
 
 
 
